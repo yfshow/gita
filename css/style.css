@@ -127,7 +127,87 @@ section .pic{margin-top:35px;}
 
 
 
+/*.....................................................index.....................................................*/
+.banner{
+	min-width: 1000px;
+	overflow: hidden;
+	max-width: 1920px;
+	height: 630px;
+	margin: auto;
+	position: relative;
+}
+.long-banner{
+	width: 1000px;
+	position: relative;
+	height: 630px;
+	margin: auto;
+}
+.banner-img{
+	display: block;
+	height: 630px;
+	width: 1920px;
+	margin: auto;
+	position: absolute;
+	top: 0px;
+	left: -460px;
+	right: -460px;
+	opacity: 0;
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
 
+.lin-box{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	text-align: center;
+}
+.lin-box span{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	background-color: #d8d8d8;
+	margin: 0 5px;
+}
+#next{
+	width: 30px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	right: 40px;
+	background-image: url(../images/arrow-r.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 50% 50%;
+	cursor: pointer;;
+}
+#prev{
+	width: 30px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	left: 40px;
+	background-image: url(../images/arrow-l.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	cursor: pointer;;
+	background-position: 50% 50%;
+}
+
+.index-img{
+	width: 100%;
+	margin:20px 0;
+}
+.index-img img{
+	width: 100%;
+}
 
 
 
