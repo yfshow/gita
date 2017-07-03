@@ -10,19 +10,19 @@
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 </head>
 <body>
-	<header>
+	<div class="header">
 		<div class="header-main">
 			<a href="#"><img src="images/logo.png"></a>
-			<nav>
+			<div class="nav">
 				<a href="#">首页</a>
 				<a href="#">资讯</a>
 				<a href="#">聚会</a>
 				<a href="#" class="on">推荐</a>
 				<a href="#">论坛</a>
-			</nav>
+			</div>
 		</div>
 		
-	</header>
+	</div>
 	<div class="main">
 		<div class="tab">
 			<a class="on">人物</a>
@@ -31,7 +31,7 @@
 		</div>
 		<div class="news-list">
 			<img src="images/temp-04.png" class="left-img">
-			<section>
+			<div class="section">
                 <h2><a href="/newsroom/14317.html">陌陌宣布启动“MOMO音乐计划”打造国内最大直播造星平台</a></h2>
                 <p class="date">2017_06_22</p>
                 <div class="note clearfix">
@@ -39,11 +39,11 @@
 					<p style="padding-bottom:0;"><a href="#" class="more-link">阅读全文</a></p>
                 </div>
                 <p class="line2"></p>
-            </section>
+            </div>
 		</div>
 		<div class="news-list">
 			<img src="images/temp-05.png" class="left-img">
-			<section>
+			<div class="section">
                 <h2><a href="/newsroom/14317.html">陌陌宣布启动“MOMO音乐计划”打造国内最大直播造星平台</a></h2>
                 <p class="date">2017_06_22</p>
                 <div class="note clearfix">
@@ -51,11 +51,11 @@
 					<p style="padding-bottom:0;"><a href="#" class="more-link">阅读全文</a></p>
                 </div>
                 <p class="line2"></p>
-            </section>
+            </div>
 		</div>
 		<div class="news-list">
 			<img src="images/temp-06.png" class="left-img">
-			<section>
+			<div class="section">
                 <h2><a href="/newsroom/14317.html">陌陌宣布启动“MOMO音乐计划”打造国内最大直播造星平台</a></h2>
                 <p class="date">2017_06_22</p>
                 <div class="note clearfix">
@@ -63,10 +63,22 @@
 					<p style="padding-bottom:0;"><a href="#" class="more-link">阅读全文</a></p>
                 </div>
                 <p class="line2"></p>
-            </section>
+            </div>
 		</div>
+		<div class="page">
+			<div class="page-home"><img src="images/home.png"></div>
+            <div class="page-left"><img src="images/page-left.png"></div>
+            <div class="page-btn page-btn-down">1</div>
+            <div class="page-btn">2</div>
+            <div class="page-btn">3</div>
+            <div class="page-btn">4</div>
+            <div class="page-btn">5</div>
+            <div class="page-left"><img src="images/page-right.png" style="margin-left: 12px;"></div>
+            <input class="page-input"/>
+            <div class="page-go">GO</div>
+        </div>
 	</div>
-	<footer class="clearfix">
+	<div class="footer clearfix">
 		<div class="footer-main">
 			<div class="footer-left">
 				京ICP备12312124号-4 / 京ICP证13325424号<br>
@@ -87,17 +99,7 @@
 		</div>
 		
 		
-	</footer>
-	<script type="text/javascript">
-	$('nav a').click(function(){
-		$('nav a').removeClass('on');
-		$(this).addClass('on');
-	});
-	$('.tab a').click(function(){
-		$('.tab a').removeClass('on');
-		$(this).addClass('on');
-	})
-
-	</script>
+	</div>
+	<script type="text/javascript" src="js/base.js"></script>
 </body>
 </html>

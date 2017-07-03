@@ -9,20 +9,20 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 </head>
-<body>
-	<header>
+<body onload="banner();">
+	<div class="header">
 		<div class="header-main">
 			<a href="#"><img src="images/logo.png"></a>
-			<nav>
+			<div class="nav">
 				<a href="#">首页</a>
 				<a href="#" class="on">资讯</a>
 				<a href="#">聚会</a>
 				<a href="#">推荐</a>
 				<a href="#">论坛</a>
-			</nav>
+			</div>
 		</div>
 		
-	</header>
+	</div>
 
 	<div class="banner" id="d2">
         <div id="d1" class="long-banner">
@@ -47,16 +47,10 @@
 	<div class="index-img">
 		<img src="images/temp-07.png">
 	</div>
-	<div class="index-img">
-		<img src="images/temp-07.png">
-	</div>
-	<div class="index-img">
-		<img src="images/temp-07.png">
-	</div>
 
 
 
-	<footer class="clearfix">
+	<div class="clearfix footer">
 		<div class="footer-main">
 			<div class="footer-left">
 				京ICP备12312124号-4 / 京ICP证13325424号<br>
@@ -77,77 +71,7 @@
 		</div>
 		
 		
-	</footer>
-	<script type="text/javascript">
-	$('nav a').click(function(){
-		$('nav a').removeClass('on');
-		$(this).addClass('on');
-	});
-
-
-	function banner(){
-		var aImg = document.querySelectorAll('img.banner-img');
-	    var aLin = document.querySelectorAll('.lin-box span');
-	    var oNew = document.getElementById('d2');
-	    var oNext = document.getElementById('next');
-	    var oPrev = document.getElementById('prev');
-	    var n = 0
-	    var z = null;
-	    autoplay();
-	    function play(a){
-	        for (var i = 0; i < aLin.length; i++) {
-	            for (var j = 0; j < aLin.length; j++) {
-	                aImg[j].style.opacity = "0";
-	                aLin[j].style.backgroundColor = "#d8d8d8";
-	            };
-	            aImg[a].style.opacity = "1";
-	            aLin[a].style.backgroundColor = "#fff";
-	        };
-	    }
-	    function autoplay(){
-	        z = setInterval(function(){
-	            n++;
-	            if(n>=4){
-	                n=0;
-	            }
-	            play(n);
-	        },4000);
-	    }
-
-	    for (var i = 0; i < aLin.length; i++) {
-			aLin[i].index = i;
-			aLin[i].addEventListener('click',function(){
-				n = this.index;
-				play(n);
-			})
-		};
-		oNext.addEventListener('click',function(){
-			n++;
-            if(n>=4){
-                n=0;
-            }
-            play(n);
-		});
-		oPrev.addEventListener('click',function(){
-			n--;
-            if(n<0){
-                n=3;
-            }
-            play(n);
-		})
-
-		oNew.addEventListener('mouseover',function(){
-			clearInterval(z);
-		})
-
-		oNew.addEventListener('mouseout',function(){
-			autoplay();
-		});
-
-	};
-	banner();
-	
-
-	</script>
+	</div>
+	<script type="text/javascript" src="js/base.js"></script>
 </body>
 </html>
